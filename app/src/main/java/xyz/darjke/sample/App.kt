@@ -1,4 +1,4 @@
-package xyz.darjke.sample
+package xyz.darjke.common
 
 import android.app.Application
 import moxy.RegisterMoxyReflectorPackages
@@ -6,7 +6,7 @@ import xyz.darjke.sample.di.AppComponent
 import xyz.darjke.sample.di.DaggerAppComponent
 
 @RegisterMoxyReflectorPackages(
-    "xyz.darjke.sample.agenda"
+    "xyz.darjke.agenda"
 )
 class App : Application() {
 
