@@ -33,6 +33,7 @@ class MainActivity : AppCompatActivity() {
         navMenu.setOnNavigationItemSelectedListener {
             when (it.title) {
                 "Agenda" -> FeatureProxyInjector.getAgendaFeature().agendaLauncher().launch(router)
+                "Chat" -> FeatureProxyInjector.getChatFeature().chatLauncher().launch(router)
                 else -> {
                 }
             }

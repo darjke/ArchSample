@@ -1,1 +1,1 @@
-include ':app', ':chat', ':agenda', ':source', ':agenda_api', ':source_api', ':common'
+include ':app', ':chat', ':agenda', ':source', ':agenda_api', ':source_api', ':common', ':chat_api'

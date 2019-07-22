@@ -29,7 +29,7 @@ abstract class AgendaFeatureComponent : AgendaApi {
         }
 
         //todo check
-        fun get() = agendaComponent
+        fun get() = agendaComponent!!
 
 
     }
@@ -41,8 +41,7 @@ abstract class AgendaFeatureComponent : AgendaApi {
     abstract fun agendaScreenComponent(): AgendaScreenComponent
 
     @Component(
-        dependencies =
-        [SourceApi::class]
+        dependencies = [SourceApi::class]
     )
     @FeatureScope
     interface AgendaDependenciesComponent : AgendaDependencies

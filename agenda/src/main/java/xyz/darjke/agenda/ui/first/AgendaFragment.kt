@@ -15,8 +15,10 @@ class AgendaFragment : BaseFragment(), AgendaView {
     @InjectPresenter
     lateinit var presenter: AgendaPresenter
 
-//    @ProvidePresenter
-//    fun provide() = AgendaPresenter()
+    @ProvidePresenter
+    fun provide() = AgendaFeatureComponent.get()
+        .agendaScreenComponent()
+        .providePresenter()
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return LayoutInflater.from(context).inflate(R.layout.agenda_main, container, false)

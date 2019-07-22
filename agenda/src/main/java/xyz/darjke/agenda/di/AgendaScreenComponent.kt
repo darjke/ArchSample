@@ -7,5 +7,5 @@ import xyz.darjke.common.di.scope.FeatureScope
 @Subcomponent
 @FeatureScope
 interface AgendaScreenComponent {
-//    fun providePresenter(): AgendaPresenter
+    fun providePresenter(): AgendaPresenter
 }

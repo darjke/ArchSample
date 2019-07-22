@@ -33,6 +33,8 @@ dependencies {
     implementation project(':source_api')
     implementation project(':agenda')
     implementation project(':agenda_api')
+    implementation project(':chat')
+    implementation project(':chat_api')
     implementation project(':source')
     implementation project(':source_api')
 

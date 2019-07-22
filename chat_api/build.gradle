@@ -28,24 +28,16 @@ android {
 
 dependencies {
 
-    implementation project(':chat_api')
-    implementation project(':source_api')
-    implementation project(':common')
+    implementation 'ru.terrakok.cicerone:cicerone:5.0.0'
 
-    implementation 'androidx.appcompat:appcompat:1.0.2'
 
     implementation "com.google.dagger:dagger:2.16"
     kapt "com.google.dagger:dagger-compiler:2.16"
 
-    implementation 'com.github.moxy-community:moxy:1.0.13'
-    implementation 'com.github.moxy-community:moxy-androidx:1.0.13'
-    kapt 'com.github.moxy-community:moxy-compiler:1.0.13'
-
-    implementation 'ru.terrakok.cicerone:cicerone:5.0.0'
-
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
+    implementation 'androidx.appcompat:appcompat:1.0.2'
     testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test:runner:1.1.0'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 }
