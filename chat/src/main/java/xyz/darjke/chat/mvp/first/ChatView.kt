@@ -1,4 +1,4 @@
-package xyz.darjke.chat.mvp
+package xyz.darjke.chat.mvp.first
 
 import moxy.MvpView
 

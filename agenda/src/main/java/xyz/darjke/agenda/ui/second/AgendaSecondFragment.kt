@@ -10,9 +10,8 @@ import moxy.presenter.InjectPresenter
 import moxy.presenter.ProvidePresenter
 import xyz.darjke.agenda.R
 import xyz.darjke.agenda.di.AgendaFeatureComponent
-import xyz.darjke.common.di.scope.FeatureScope
 
-class AgendaFragment : MvpAppCompatFragment(), AgendaView {
+class AgendaSecondFragment : MvpAppCompatFragment(), AgendaView {
 
     @InjectPresenter
     lateinit var presenter: AgendaPresenter
@@ -27,6 +26,6 @@ class AgendaFragment : MvpAppCompatFragment(), AgendaView {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        pageNumber.text = "1 page"
+        pageNumber.text = "2 page"
     }
 }

@@ -6,7 +6,9 @@ import xyz.darjke.common.di.scope.FeatureScope
 import xyz.darjke.source_api.SourceApi
 
 @Component(
-    modules = [ChatFeatureModule::class],
+    modules = [
+        ChatFeatureModule::class,
+        ChatNavigationModule::class],
     dependencies = [ChatFeatureDependencies::class]
 )
 abstract class ChatFeatureComponent : ChatFeatureApi {

@@ -31,12 +31,13 @@ class MainActivity : AppCompatActivity() {
         navMenu.getMenu().add("Chat")
 
         navMenu.setOnNavigationItemSelectedListener {
-            when (it.title) {
-                "Agenda" -> FeatureProxyInjector.getAgendaFeature().agendaLauncher().launch(router)
-                "Chat" -> FeatureProxyInjector.getChatFeature().chatLauncher().launch(router)
-                else -> {
+            val screen = when (it.title) {
+                "Agenda" -> FeatureProxyInjector.getAgendaFeature().agendaLauncher().startScreen()
+//                "Chat" -> FeatureProxyInjector.getChatFeature().chatLauncher().launch(router)
+                else -> { null
                 }
             }
+            router.navigateTo(screen)
             return@setOnNavigationItemSelectedListener true
         }
 

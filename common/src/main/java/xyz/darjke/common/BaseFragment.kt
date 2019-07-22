@@ -5,10 +5,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import moxy.MvpAppCompatFragment
+import javax.inject.Inject
 
-open class BaseFragment : MvpAppCompatFragment() {
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-//        App.appComponent.inject(this)
-        return super.onCreateView(inflater, container, savedInstanceState)
+class FlowFragment : MvpAppCompatFragment() {
+
+
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
+        return inflater.inflate(R.layout.flow_fragment, container, false)
     }
 }

@@ -8,7 +8,7 @@ import javax.inject.Inject
 
 @FeatureScope
 @InjectViewState
-class AgendaPresenter @Inject constructor(
+class AgendaSecondPresenter @Inject constructor(
     private val source: DataSource
 ) : MvpPresenter<AgendaView>() {
 
